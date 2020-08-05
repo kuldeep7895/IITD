@@ -94,6 +94,10 @@ while(True):
         timeline.pop()
         json = timeline[-1]
         tags = list(json.keys())
+        i = 0
+        while(i<len(tags)):
+            print(str(i+1)+" "+tags[i])
+            i+=1
         response = input("TELL YOUR OPTION NUMBER: ")
 
     index = int(response)-1
